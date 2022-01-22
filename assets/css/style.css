@@ -1,0 +1,111 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #181818;
+}
+
+header{
+    background-color: black;
+}
+
+header .logo{
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: url('/assets/fonts/Bebas.ttf');
+    font-size: 30px;
+}
+
+/*elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: whitesmoke;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+
+.filme_principal{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/assets/img/Capa_peaky_blinders_.jpg');
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.filme_principal .descricao{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    margin-top: 10%;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: whitesmoke;
+/* Dois valores no paddinng significa cima baixo, esquerda direita */
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 10px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.filme_principal .container{
+    margin-left: 35px;
+    width: 70%;
+}
+
+.box_filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 2px;
+}
